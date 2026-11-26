@@ -61,8 +61,8 @@ Flow: **investigate → emit leads → dedup → validate high-value leads → p
 ## Orchestrate
 
 1. Establish objective, target, authorization class, engagement mode, allowed methods, timing/rate limits, data restrictions and stop conditions. Create the run directory.
-2. Reconnoiter only enough to select relevant investigators and (for live targets) build the endpoint inventory. Record scope and known blind spots.
-3. Delegate independent areas in parallel with the `subagent` tool. Give each child complete scope, exact targets/files, exclusions, the ledger path, and required output. Children do not expand scope or spawn agents.
+2. Map the target into areas before delegating: subsystems, entry points, data layer and auth boundaries (source), or endpoint groups (live target). Record scope and known blind spots.
+3. Partition work by area × class and fan out many narrow workers: one investigator per (area, class) pair where the class plausibly applies — several workers for a class with a large surface (e.g. SQL across many subsystems), none where it doesn't. Give each worker complete scope, its exact files/endpoints, exclusions, the ledger path, and required output. Workers stay strictly inside their assignment; the ledger dedups anything that overlaps. Children do not expand scope or spawn agents.
 4. Collect leads, dedup by `(class, location)` root cause, and rank the highest-value leads for validation.
 5. Dispatch `security/validate` on each chosen lead — one lead per call. It tries to refute; `refuted` is the default when proof is insufficient.
 6. Check for prior reports before confirming: a duplicate of a known report is not a new finding.
@@ -74,7 +74,7 @@ Useful agents:
 | --- | --- |
 | `security/surface` | Organization inventory, ownership and scope questions. |
 | `security/recon` | Per-target endpoint, JS, parameter and technology discovery. |
-| `security/lanes/*` | Per-class source investigators; emit leads. |
+| `security/lanes/*` | Narrow per-class investigators; dispatch several per class across areas. |
 | `security/web` / `security/api` | Authorized dynamic investigators (multi-identity); emit leads. |
 | `security/validate` | Try to refute or confirm a single lead; produce a finding status. |
 | `security/report` | Draft the report from confirmed findings only. |
