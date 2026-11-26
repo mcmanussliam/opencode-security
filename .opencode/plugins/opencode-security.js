@@ -230,9 +230,10 @@ function loadAgents() {
       system: body.trim(),
     };
 
-    const model = scalar(header, "model");
+    const model = scalar(header, "model")?.match(/^([^/#]+)\/([^#]+)(?:#([^#]+))?$/);
     if (model) {
-      agent.model = model;
+      const [, providerID, modelID, variant] = model;
+      agent.model = { providerID, id: modelID, ...(variant ? { variant } : {}) };
     }
 
     const color = scalar(header, "color");
