@@ -1,7 +1,6 @@
 ---
 description: "Find state-changing endpoints that rely on ambient cookies without origin or token checks"
 mode: subagent
-model: opencode-go/hy4-flash-free
 permissions:
   - action: edit
     resource: "*"

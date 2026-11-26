@@ -1,7 +1,6 @@
 ---
 description: Conduct bounded, non-destructive web and client-side security testing on authorized applications and emit leads
 mode: subagent
-model: opencode-go/claude-haiku-5-5
 color: "#8b5cf6"
 permissions:
   - action: edit

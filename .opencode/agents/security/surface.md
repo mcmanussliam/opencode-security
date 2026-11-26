@@ -1,7 +1,6 @@
 ---
 description: Maintain organization asset inventories, ownership evidence, relationships, exposure changes and reconnaissance leads
 mode: subagent
-model: opencode-go/claude-haiku-5-5
 color: "#0284c7"
 permissions:
   - action: edit

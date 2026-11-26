@@ -1,7 +1,6 @@
 ---
 description: "Find untrusted input reaching SQL, ORM raw fragments, or query builders without parameterization"
 mode: subagent
-model: opencode-go/hy4-flash-free
 permissions:
   - action: edit
     resource: "*"

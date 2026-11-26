@@ -1,7 +1,6 @@
 ---
 description: "Check resolver-level authorization, field exposure, introspection, depth limits, and batching abuse"
 mode: subagent
-model: opencode-go/hy4-flash-free
 permissions:
   - action: edit
     resource: "*"

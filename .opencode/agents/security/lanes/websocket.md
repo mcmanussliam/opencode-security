@@ -1,7 +1,6 @@
 ---
 description: "Check upgrade authentication, message authorization, origin checks, and broadcast scoping"
 mode: subagent
-model: opencode-go/hy4-flash-free
 permissions:
   - action: edit
     resource: "*"

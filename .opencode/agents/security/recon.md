@@ -1,7 +1,6 @@
 ---
 description: Discover a live target's endpoints, JavaScript bundles, parameters and technology, and emit reconnaissance leads
 mode: subagent
-model: opencode-go/claude-haiku-5-5
 color: "#0891b2"
 permissions:
   - action: edit

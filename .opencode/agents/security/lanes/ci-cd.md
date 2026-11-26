@@ -1,7 +1,6 @@
 ---
 description: "Find untrusted code execution, secret exposure, and supply-chain gaps in build and release pipelines"
 mode: subagent
-model: opencode-go/hy4-flash-free
 permissions:
   - action: edit
     resource: "*"

@@ -1,7 +1,6 @@
 ---
 description: Draft a bug-bounty or review report from confirmed findings only, with evidence and remediation
 mode: subagent
-model: opencode-go/hy4-flash-free
 color: "#10b981"
 permissions:
   - action: edit

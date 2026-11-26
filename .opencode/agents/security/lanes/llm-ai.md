@@ -1,7 +1,6 @@
 ---
 description: "Review prompt injection, tool authority, data boundaries, and unsafe model output handling"
 mode: subagent
-model: opencode-go/hy4-flash-free
 permissions:
   - action: edit
     resource: "*"

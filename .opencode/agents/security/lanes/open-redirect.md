@@ -1,7 +1,6 @@
 ---
 description: "Find user-controlled redirects, return URLs, and deep links that leave the trusted origin"
 mode: subagent
-model: opencode-go/hy4-flash-free
 permissions:
   - action: edit
     resource: "*"

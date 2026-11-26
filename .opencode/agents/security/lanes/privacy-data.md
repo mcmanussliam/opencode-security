@@ -1,7 +1,6 @@
 ---
 description: "Find over-collection, over-exposure, retention, and personal data flowing to logs, analytics, or third parties"
 mode: subagent
-model: opencode-go/hy4-flash-free
 permissions:
   - action: edit
     resource: "*"

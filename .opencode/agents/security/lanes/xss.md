@@ -1,7 +1,6 @@
 ---
 description: "Trace untrusted data into HTML, DOM sinks, rich text, and unsafe rendering paths"
 mode: subagent
-model: opencode-go/hy4-flash-free
 permissions:
   - action: edit
     resource: "*"

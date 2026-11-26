@@ -1,7 +1,6 @@
 ---
 description: "Review CSP, framing, postMessage origins, DOM clobbering, and other browser security controls"
 mode: subagent
-model: opencode-go/hy4-flash-free
 permissions:
   - action: edit
     resource: "*"

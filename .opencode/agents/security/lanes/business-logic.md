@@ -1,7 +1,6 @@
 ---
 description: "Check invariants, limits, workflow ordering, and abuse controls that technical scanners miss"
 mode: subagent
-model: opencode-go/hy4-flash-free
 permissions:
   - action: edit
     resource: "*"

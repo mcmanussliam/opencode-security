@@ -1,7 +1,6 @@
 ---
 description: "Find untrusted data reaching native object, pickle, YAML, Java, PHP, or JavaScript deserializers"
 mode: subagent
-model: opencode-go/hy4-flash-free
 permissions:
   - action: edit
     resource: "*"

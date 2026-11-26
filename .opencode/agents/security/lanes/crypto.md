@@ -1,7 +1,6 @@
 ---
 description: "Find weak algorithms, unsafe modes, bad key handling, and predictable randomness in security contexts"
 mode: subagent
-model: opencode-go/hy4-flash-free
 permissions:
   - action: edit
     resource: "*"

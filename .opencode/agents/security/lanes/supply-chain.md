@@ -1,7 +1,6 @@
 ---
 description: "Review dependency versions, lockfiles, install scripts, typosquatting risk, and reachable known vulnerabilities"
 mode: subagent
-model: opencode-go/hy4-flash-free
 permissions:
   - action: edit
     resource: "*"

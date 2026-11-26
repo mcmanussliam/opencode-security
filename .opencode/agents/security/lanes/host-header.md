@@ -1,7 +1,6 @@
 ---
 description: "Find host header injection, password-reset poisoning, and cache or routing decisions trusting the Host header"
 mode: subagent
-model: opencode-go/hy4-flash-free
 permissions:
   - action: edit
     resource: "*"

@@ -1,7 +1,6 @@
 ---
 description: "Review upload validation, storage boundaries, content-type checks, and serving paths"
 mode: subagent
-model: opencode-go/hy4-flash-free
 permissions:
   - action: edit
     resource: "*"

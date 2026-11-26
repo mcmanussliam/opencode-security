@@ -1,7 +1,6 @@
 ---
 description: "Check that every object, action, tenant, and admin capability is authorized server-side"
 mode: subagent
-model: opencode-go/hy4-flash-free
 permissions:
   - action: edit
     resource: "*"

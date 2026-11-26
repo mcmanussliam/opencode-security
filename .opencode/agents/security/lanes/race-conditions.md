@@ -1,7 +1,6 @@
 ---
 description: "Find check-then-act sequences, missing transactions, and shared mutable state in security boundaries"
 mode: subagent
-model: opencode-go/hy4-flash-free
 permissions:
   - action: edit
     resource: "*"

@@ -1,7 +1,6 @@
 ---
 description: "Find untrusted data evaluated as a template, expression, or dynamic code path"
 mode: subagent
-model: opencode-go/hy4-flash-free
 permissions:
   - action: edit
     resource: "*"

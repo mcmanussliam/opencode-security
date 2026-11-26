@@ -1,7 +1,6 @@
 ---
 description: "Trace untrusted input into dynamic code evaluation, module loading, and sandboxed execution"
 mode: subagent
-model: opencode-go/hy4-flash-free
 permissions:
   - action: edit
     resource: "*"

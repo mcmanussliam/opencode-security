@@ -1,7 +1,6 @@
 ---
 description: "Review Terraform, CloudFormation, serverless, and cloud SDK configuration for exposed resources and over-broad identity"
 mode: subagent
-model: opencode-go/hy4-flash-free
 permissions:
   - action: edit
     resource: "*"

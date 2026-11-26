@@ -1,7 +1,6 @@
 ---
 description: "Find sensitive data or authorization decisions stored in and trusted from the browser"
 mode: subagent
-model: opencode-go/hy4-flash-free
 permissions:
   - action: edit
     resource: "*"

@@ -1,7 +1,6 @@
 ---
 description: "Find XML parsers that resolve external entities, DTDs, or network resources"
 mode: subagent
-model: opencode-go/hy4-flash-free
 permissions:
   - action: edit
     resource: "*"

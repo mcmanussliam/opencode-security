@@ -1,7 +1,6 @@
 ---
 description: "Find ambiguous framing, proxy/backend disagreement, header injection, and unsafe HTTP parsing"
 mode: subagent
-model: opencode-go/hy4-flash-free
 permissions:
   - action: edit
     resource: "*"

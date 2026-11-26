@@ -1,7 +1,6 @@
 ---
 description: "Find object-shaped input reaching NoSQL filters, operators, or query parsers"
 mode: subagent
-model: opencode-go/hy4-flash-free
 permissions:
   - action: edit
     resource: "*"

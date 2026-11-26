@@ -1,7 +1,6 @@
 ---
 description: "Check audit coverage, sensitive log content, error leakage, and alertability of security events"
 mode: subagent
-model: opencode-go/hy4-flash-free
 permissions:
   - action: edit
     resource: "*"

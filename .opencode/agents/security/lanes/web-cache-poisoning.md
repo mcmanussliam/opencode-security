@@ -1,7 +1,6 @@
 ---
 description: "Find cache key confusion, unkeyed inputs, and cache deception that serve poisoned or private content"
 mode: subagent
-model: opencode-go/hy4-flash-free
 permissions:
   - action: edit
     resource: "*"

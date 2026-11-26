@@ -1,7 +1,6 @@
 ---
 description: "Trace untrusted input into process execution, shell interpolation, and argument construction"
 mode: subagent
-model: opencode-go/hy4-flash-free
 permissions:
   - action: edit
     resource: "*"

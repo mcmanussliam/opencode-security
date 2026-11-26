@@ -1,7 +1,6 @@
 ---
 description: Assess authorized REST, GraphQL, WebSocket and realtime APIs for identity, authorization and abuse weaknesses and emit leads
 mode: subagent
-model: opencode-go/claude-haiku-5-5
 color: "#ec4899"
 permissions:
   - action: edit

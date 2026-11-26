@@ -1,7 +1,6 @@
 ---
 description: "Review image build, runtime privileges, secrets, network policy, and workload hardening"
 mode: subagent
-model: opencode-go/hy4-flash-free
 permissions:
   - action: edit
     resource: "*"

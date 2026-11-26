@@ -1,7 +1,6 @@
 ---
 description: "Find user-controlled paths reaching open, read, write, delete, archive, or template loading"
 mode: subagent
-model: opencode-go/hy4-flash-free
 permissions:
   - action: edit
     resource: "*"

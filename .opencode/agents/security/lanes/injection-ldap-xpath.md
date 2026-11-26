@@ -1,7 +1,6 @@
 ---
 description: "Find untrusted input concatenated into directory filters, distinguished names, or XPath expressions"
 mode: subagent
-model: opencode-go/hy4-flash-free
 permissions:
   - action: edit
     resource: "*"

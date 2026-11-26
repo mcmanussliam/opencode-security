@@ -1,7 +1,6 @@
 ---
 description: "Trace user-controlled URLs and hosts into outbound HTTP, DNS, webhook, or file fetches"
 mode: subagent
-model: opencode-go/hy4-flash-free
 permissions:
   - action: edit
     resource: "*"

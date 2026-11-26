@@ -1,7 +1,6 @@
 ---
 description: "Review input binding, excessive data exposure, CORS, rate limits, and unsafe API defaults"
 mode: subagent
-model: opencode-go/hy4-flash-free
 permissions:
   - action: edit
     resource: "*"

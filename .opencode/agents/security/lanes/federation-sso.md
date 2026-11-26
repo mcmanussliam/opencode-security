@@ -1,7 +1,6 @@
 ---
 description: "Review token verification, OAuth/OIDC and SAML flows, and federated identity trust boundaries"
 mode: subagent
-model: opencode-go/hy4-flash-free
 permissions:
   - action: edit
     resource: "*"

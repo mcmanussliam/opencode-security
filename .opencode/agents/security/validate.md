@@ -1,7 +1,6 @@
 ---
 description: Try to refute or confirm a single security lead by reading and safely running code, and return a finding status
 mode: subagent
-model: opencode-go/claude-haiku-5-5
 color: "#f59e0b"
 permissions:
   - action: edit

@@ -1,7 +1,6 @@
 ---
 description: "Find untrusted keys reaching recursive merge, object assignment, or dynamic property access"
 mode: subagent
-model: opencode-go/hy4-flash-free
 permissions:
   - action: edit
     resource: "*"

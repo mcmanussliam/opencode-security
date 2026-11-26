@@ -1,7 +1,6 @@
 ---
 description: "Review Android and iOS storage, transport, WebViews, deep links, and platform key use"
 mode: subagent
-model: opencode-go/hy4-flash-free
 permissions:
   - action: edit
     resource: "*"

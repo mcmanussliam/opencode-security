@@ -1,7 +1,6 @@
 ---
 description: "Find dangling DNS records pointing at unclaimed third-party services and reclaimable resources"
 mode: subagent
-model: opencode-go/hy4-flash-free
 permissions:
   - action: edit
     resource: "*"

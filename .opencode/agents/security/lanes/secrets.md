@@ -1,7 +1,6 @@
 ---
 description: "Find hard-coded credentials, unsafe secret loading, and secrets exposed through logs, errors, URLs, or client bundles"
 mode: subagent
-model: opencode-go/hy4-flash-free
 permissions:
   - action: edit
     resource: "*"
