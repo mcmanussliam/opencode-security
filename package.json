@@ -1,0 +1,19 @@
+{
+  "name": "opencode-security",
+  "version": "0.1.0",
+  "description": "Bug-bounty and code-review security suite for OpenCode: orchestrate, investigate, validate, report.",
+  "type": "module",
+  "main": ".opencode/plugins/opencode-security.js",
+  "files": [
+    "index.js",
+    ".opencode/"
+  ],
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcmanussliam/opencode-security.git"
+  },
+  "license": "MIT"
+}
