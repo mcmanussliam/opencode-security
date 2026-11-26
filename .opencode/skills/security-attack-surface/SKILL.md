@@ -13,12 +13,12 @@ For recurring organization work, create or resume:
 
 ```text
 .security/organization/<org-slug>/
-├── organization.md  # objectives, crown jewels, scope decisions and open questions
-├── assets.md        # normalized assets, sources, scope status and deltas
-└── relations.md     # supported relationships among assets, identities and controls
+├── organization.json  # objectives, crown jewels, scope decisions and open questions
+├── assets.json        # normalized assets, sources, scope status and deltas
+└── relations.json     # supported relationships, changes, candidates, next investigations
 ```
 
-Use `references/organization-template.md` and `references/inventory-template.md` when creating them.
+Use `references/organization-schema.md` and `references/inventory-schema.md` when creating them.
 
 Capture only information that affects decisions:
 

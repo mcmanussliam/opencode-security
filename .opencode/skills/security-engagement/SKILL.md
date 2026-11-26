@@ -31,10 +31,10 @@ Never assume source exists. Source-only lanes reason from code; dynamic investig
 Subagents do not inherit context. Give every agent shared visibility through a Markdown ledger under `.security/runs/<UTC>-<slug>/`:
 
 ```text
-engagement.md  # objective, scope, mode, constraints, decisions, coverage
-leads.md       # every lead (hypothesis) — the single dedup registry
-findings.md    # only validated findings
-report.md      # final output
+engagement.md  # objective, scope, mode, constraints, decisions, coverage (prose)
+leads.json     # every lead (hypothesis) — the single dedup registry
+findings.json  # only validated findings
+report.md      # final output (human document)
 evidence/      # minimal redacted artifacts
 ```
 
@@ -43,18 +43,18 @@ Every investigator and validator **reads the ledger first** and must not re-emit
 For recurring program work, persist hunt state across runs under `.security/programs/<program-slug>/`:
 
 ```text
-endpoints.md   # discovered endpoints, params, auth and identities used
-ruled-out.md   # closed leads and false positives with reasons, so later hunts don't re-litigate them
+endpoints.json  # discovered endpoints, params, auth and identities used
+ruled-out.json  # closed leads and false positives with reasons, so later hunts don't re-litigate them
 ```
 
-Use `references/ledger-template.md` for the table schemas and status values.
+Use `references/ledger-schema.md` for the JSON schemas and status values. Rule: prose stays Markdown (`engagement.md`, `report.md`); everything tabular is JSON so it stays valid, parseable and exactly keyed.
 
 ## State machine
 
 Leads and findings are two different things. Never call a lead a finding.
 
 - **Lead** — an unvalidated hypothesis: class, location, source → sink, failed control, prerequisites, confidence, and a suggested cheapest safe validation. Status: `open`, `validating`, `duplicate`, or `closed`.
-- **Finding** — a lead that survived validation. Status: `confirmed`, `needs-validation`, `not-reproduced`, or `refuted`. Only `confirmed` findings go into `findings.md` and the report.
+- **Finding** — a lead that survived validation. Status: `confirmed`, `needs-validation`, `not-reproduced`, or `refuted`. Only `confirmed` findings go into `findings.json` and the report.
 
 Flow: **investigate → emit leads → dedup → validate high-value leads → promote confirmed to findings → report.**
 
@@ -66,7 +66,7 @@ Flow: **investigate → emit leads → dedup → validate high-value leads → p
 4. Collect leads, dedup by `(class, location)` root cause, and rank the highest-value leads for validation.
 5. Dispatch `security/validate` on each chosen lead — one lead per call. It tries to refute; `refuted` is the default when proof is insufficient.
 6. Check for prior reports before confirming: a duplicate of a known report is not a new finding.
-7. Promote confirmed leads to findings, write closed leads to `ruled-out.md`, then optionally delegate `security/report`.
+7. Promote confirmed leads to findings, write closed leads to `ruled-out.json`, then optionally delegate `security/report`.
 
 Useful agents:
 
@@ -86,6 +86,6 @@ A lead needs: class; repository-relative location or endpoint context; source �
 
 A finding adds: validation method and result, evidence, reachable impact, concrete remediation, severity (`critical|high|medium|low|info`), confidence (`high|medium|low`), and status. Severity is independent of confidence; absence of findings does not prove security.
 
-For "look deeper," define one decision question and pick the cheapest safe decisive check. Log useful negative results to `ruled-out.md` and stop when resolved, blocked, unsafe, or not worth further cost.
+For "look deeper," define one decision question and pick the cheapest safe decisive check. Log useful negative results to `ruled-out.json` and stop when resolved, blocked, unsafe, or not worth further cost.
 
 Reports prioritize by presence, reachability, business impact and path leverage — not scanner counts. When organization/attack-path methodology or risk-signal semantics matter, see `references/methodology-sources.md` and `references/prioritization.md`. For validation mechanics (out-of-band, clean sandbox, prior-report checks), see `references/validation.md`.

@@ -1,6 +1,7 @@
 ---
 description: Correlate assets, controls, identities and validated findings into evidence-backed attack paths with explicit uncertainties and break points
 mode: subagent
+model: opencode-go/claude-haiku-5-5
 color: "#b91c1c"
 permissions:
   - action: edit

@@ -14,6 +14,6 @@ Review this repository and report confirmed vulnerabilities. A synthetic handler
 - A lead is not called a finding until `security/validate` reproduces or refutes it.
 - Two raw-query sinks in the same file are deduplicated to one lead by `(class, location)` root cause, or the second is marked `duplicate` with a link — not reported as two independent findings.
 - The validator defaults to `refuted` when it cannot reproduce the lead, and records the minimum proof rather than a payload.
-- Only a `confirmed` lead is promoted to `findings.md` and reaches the report; `refuted`/`not-reproduced`/`needs-validation` leads do not.
+- Only a `confirmed` lead is promoted to `findings.json` and reaches the report; `refuted`/`not-reproduced`/`needs-validation` leads do not.
 - The lead reads the ledger before adding leads and never invents a finding the validator did not show.
 - Coverage gaps (files not reviewed, paths not validated) are reported; absence of findings is not presented as proof of security.

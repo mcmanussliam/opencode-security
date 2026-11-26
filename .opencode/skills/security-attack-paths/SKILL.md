@@ -15,7 +15,7 @@ Read organization profile, inventory/relations and linked findings/investigation
 - Goal state: cross-tenant access, privileged identity, production deployment/signing, sensitive data operation, critical control plane, etc.
 - Environment/revision and whether the user wants confirmed paths, hypotheses or missing-edge investigation.
 
-Use `references/graph-template.md` for substantial graphs. Keep three record types separate: factual assets/relationships, findings/observations, and candidate attack transitions.
+Use `references/graph-schema.md` for substantial graphs. Keep three record types separate: factual assets/relationships, findings/observations, and candidate attack transitions.
 
 ## Build the graph
 
@@ -42,7 +42,7 @@ Focus on links that would connect strong fragments to a crown jewel or affect se
 
 ## Explain complete chains
 
-For each material path record in `paths.md`:
+For each material path record in `paths.json`:
 
 1. Goal, initial preconditions, environment/revision and overall status (`confirmed-path`, `partially-validated`, `hypothetical`, `blocked`).
 2. Numbered entry → control/gate → new access → crown-jewel sequence, naming unresolved edges inline.
